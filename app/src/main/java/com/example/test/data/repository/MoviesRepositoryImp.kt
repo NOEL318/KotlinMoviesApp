@@ -15,4 +15,12 @@ class MoviesRepositoryImp(
     override suspend fun getPopularMovies(): List<Movie> {
         return remoteMovies.getPopularMovies()
     }
+
+    override suspend fun insertLatestMovies(movies: List<Movie>): List<Movie> {
+      return movies
+    }
+
+    override suspend fun insertPopularMovies(movies: List<Movie>): List<Movie> {
+       return movies
+    }
 }
